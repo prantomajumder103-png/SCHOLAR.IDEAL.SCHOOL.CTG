@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Scholar Ideal School — Learning today, leading tomorrow.">
+<title>Scholar Ideal School | Official Website</title>
+<style>
+:root{--navy:#102b4e;--blue:#1769aa;--sky:#eaf4ff;--gold:#e8b84a;--ink:#18283b;--muted:#64748b;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;color:var(--ink);background:#f8fbff;line-height:1.65}
+a{color:inherit;text-decoration:none}.topbar{background:var(--navy);color:#eaf4ff;padding:8px 6%;font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(12px);box-shadow:0 4px 22px #102b4e12}
+.nav{max-width:1180px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy)}.crest{width:48px;height:48px;border-radius:14px;background:linear-gradient(145deg,var(--blue),var(--navy));color:white;display:grid;place-items:center;font-size:22px;box-shadow:0 8px 18px #1769aa35}
+.brand small{display:block;font-size:11px;letter-spacing:1.5px;color:var(--muted);font-weight:700}
+nav{display:flex;gap:20px;align-items:center;font-size:14px;font-weight:650}nav a:hover{color:var(--blue)}.menu{display:none;border:0;background:var(--sky);padding:9px 12px;border-radius:9px;font-size:18px}
+.hero{background:radial-gradient(circle at 80% 20%,#2d83c9 0,transparent 28%),linear-gradient(120deg,#0d2747,#14558d);color:white;padding:86px 6% 92px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff24;border-radius:50%;right:-100px;bottom:-250px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff06}
+.hero-inner{max-width:1180px;margin:auto;position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px}
+.eyebrow{color:#ffdc86;font-weight:800;letter-spacing:2px;font-size:12px;text-transform:uppercase}.hero h1{font-size:clamp(36px,5vw,62px);line-height:1.12;margin:14px 0}.hero p{color:#d9eaff;max-width:620px;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:750;background:var(--gold);color:#142b45}.btn.outline{background:transparent;border:1px solid #ffffff88;color:white}
+.hero-card{background:#ffffff12;border:1px solid #ffffff30;border-radius:24px;padding:28px;backdrop-filter:blur(8px);min-height:230px;display:flex;flex-direction:column;justify-content:space-between}
+.hero-card .big{font-size:58px}.hero-card strong{font-size:22px}.hero-card p{font-size:14px;margin-bottom:0}
+section{padding:72px 6%}.wrap{max-width:1180px;margin:auto}.section-head{text-align:center;margin-bottom:38px}.kicker{color:var(--blue);font-size:12px;font-weight:850;letter-spacing:2px}.section-head h2{font-size:clamp(27px,3vw,38px);color:var(--navy);margin:8px 0}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #e4edf7;border-radius:18px;padding:25px;box-shadow:0 12px 30px #15395c09}.card .ico{width:48px;height:48px;background:var(--sky);border-radius:14px;display:grid;place-items:center;font-size:23px}.card h3{color:var(--navy);margin:15px 0 7px}.card p{color:var(--muted);font-size:14px;margin:0}
+.about{background:var(--sky)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about-panel{background:linear-gradient(145deg,#1769aa,#102b4e);color:white;border-radius:24px;padding:36px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between}.about-panel .seal{font-size:62px}.about-panel p{color:#dcecff}.about-copy h2{font-size:34px;color:var(--navy);line-height:1.2}.about-copy p{color:var(--muted)}
+.message{display:grid;grid-template-columns:.7fr 1.3fr;gap:28px;align-items:stretch}.principal-placeholder{background:linear-gradient(145deg,#d9eaff,#f7fbff);border:1px dashed #91b8df;border-radius:20px;display:grid;place-items:center;min-height:230px;text-align:center;color:var(--blue);padding:20px}.principal-placeholder span{font-size:54px}.quote{background:white;border-radius:20px;padding:30px;border:1px solid #e4edf7}.quote blockquote{font-size:18px;color:var(--navy);margin:0 0 18px}.quote small{color:var(--muted)}
+.notice{background:white;border:1px solid #e4edf7;border-radius:18px;overflow:hidden}.notice-head{padding:18px 22px;background:var(--navy);color:white;font-weight:800}.notice-row{padding:18px 22px;border-bottom:1px solid #edf2f7;display:flex;justify-content:space-between;gap:20px}.notice-row:last-child{border:0}.notice-row span{color:var(--muted);font-size:13px}
+.contact{background:var(--navy);color:white}.contact .section-head h2{color:white}.contact .section-head p{color:#c9d9ea}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-item{background:#ffffff10;border:1px solid #ffffff24;padding:22px;border-radius:16px}.contact-item strong{display:block;color:#ffdc86;margin-bottom:5px}
+footer{background:#091d34;color:#b9c9da;text-align:center;padding:22px;font-size:13px}
+@media(max-width:800px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:white;padding:18px 6%;flex-direction:column;align-items:flex-start;box-shadow:0 12px 18px #102b4e18}.menu{display:block}.hero-inner,.about-grid,.message{grid-template-columns:1fr}.hero{padding-top:62px}.cards,.contact-grid{grid-template-columns:1fr}.hero-card{min-height:190px}section{padding:56px 6%}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>📚 Knowledge • Character • Excellence</span><span>শিক্ষাই শক্তি | Education is the key to a brighter future</span></div>
+<header><div class="nav">
+<a class="brand" href="#home"><span class="crest">SIS</span><span>Scholar Ideal School<small>LEARN • GROW • LEAD</small></span></a>
+<button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('show');document.querySelector('nav').style.display=document.querySelector('nav').classList.contains('show')?'flex':'none'">☰</button>
+<nav><a href="#home">হোম</a><a href="#about">আমাদের সম্পর্কে</a><a href="#message">প্রধান শিক্ষকের বার্তা</a><a href="#notices">নোটিশ</a><a href="#contact">যোগাযোগ</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<div><div class="eyebrow">WELCOME TO SCHOLAR IDEAL SCHOOL</div><h1>স্বপ্ন দেখো, শেখো,<br>আগামীর নেতৃত্ব দাও।</h1><p>Welcome to Scholar Ideal School — a place to discover knowledge, build character, and prepare for a brighter tomorrow.</p><div class="actions"><a class="btn" href="#about">আমাদের সম্পর্কে জানুন</a><a class="btn outline" href="#contact">যোগাযোগ করুন</a></div></div>
+<div class="hero-card"><div class="big">🎓</div><div><strong>Learning for Life</strong><p>জ্ঞান, শৃঙ্খলা ও মানবিক মূল্যবোধের পথে একসাথে এগিয়ে চলি।</p></div></div>
+</div></section>
+<section id="about"><div class="wrap"><div class="section-head"><div class="kicker">ABOUT OUR SCHOOL</div><h2>আমাদের বিদ্যালয়</h2><p>A community where every learner matters.</p></div>
+<div class="about-grid"><div class="about-panel"><div class="seal">🏫</div><div><h3>Scholar Ideal School</h3><p>শিক্ষা, নৈতিকতা ও সৃজনশীলতার সমন্বয়ে সুন্দর ভবিষ্যৎ গড়ার প্রত্যয়।</p></div></div><div class="about-copy"><h2>শেখার আনন্দ, সাফল্যের পথে</h2><p>Scholar Ideal School-এর ওয়েবসাইটে আপনাকে স্বাগতম। আমাদের লক্ষ্য শিক্ষার্থীদের জ্ঞান অর্জনের পাশাপাশি দায়িত্বশীল, আত্মবিশ্বাসী ও মানবিক মানুষ হিসেবে গড়ে উঠতে অনুপ্রাণিত করা।</p><p>This website is a digital introduction to our school. Official history, achievements, academic information and school details can be added here after verification.</p></div></div></div></section>
+<section style="background:#fff" id="features"><div class="wrap"><div class="section-head"><div class="kicker">WHY SCHOLAR IDEAL SCHOOL</div><h2>আমাদের অঙ্গীকার</h2><p>Building strong foundations for lifelong learning.</p></div>
+<div class="cards"><article class="card"><div class="ico">📖</div><h3>মানসম্মত শিক্ষা</h3><p>শিক্ষার্থীদের কৌতূহল, চিন্তাশক্তি ও শেখার আগ্রহকে গুরুত্ব দেওয়া।</p></article><article class="card"><div class="ico">🌱</div><h3>চরিত্র গঠন</h3><p>সততা, শৃঙ্খলা, সহমর্মিতা ও দায়িত্ববোধের চর্চা।</p></article><article class="card"><div class="ico">🚀</div><h3>সৃজনশীলতা</h3><p>নতুন ধারণা, দলগত কাজ ও ইতিবাচক উদ্যোগে উৎসাহ দেওয়া।</p></article></div></div></section>
+<section id="message"><div class="wrap"><div class="section-head"><div class="kicker">FROM THE HEAD TEACHER</div><h2>প্রধান শিক্ষকের বাণী</h2><p>A message of inspiration and guidance.</p></div>
+<div class="message"><div class="principal-placeholder"><div><span>👨‍🏫</span><br><strong>প্রধান শিক্ষকের ছবি</strong><br><small>এখানে Head Sir-এর অনুমোদিত ছবি যোগ করুন</small></div></div><div class="quote"><blockquote>“শিক্ষা শুধু পরীক্ষায় ভালো ফল করার জন্য নয়; শিক্ষা মানুষকে আলোকিত, দায়িত্বশীল ও দেশপ্রেমিক করে তোলে। জ্ঞান অর্জনের পাশাপাশি সততা, শৃঙ্খলা ও মানবিক মূল্যবোধ ধারণ করে তোমরা নিজেদের এবং দেশের ভবিষ্যৎ গড়ে তুলবে—এই প্রত্যাশা করি।”</blockquote><strong>প্রধান শিক্ষক</strong><br><small>Scholar Ideal School</small><p style="color:#64748b;font-size:13px;margin-top:18px">নোট: এই বার্তাটি একটি প্রস্তাবিত খসড়া। প্রকাশের আগে Head Sir-এর অনুমোদন নিন।</p></div></div></div></section>
+<section id="notices" style="background:#eaf4ff"><div class="wrap"><div class="section-head"><div class="kicker">LATEST UPDATES</div><h2>নোটিশ বোর্ড</h2><p>School announcements and important updates.</p></div>
+<div class="notice"><div class="notice-head">📌 গুরুত্বপূর্ণ নোটিশ</div><div class="notice-row"><div><strong>নতুন নোটিশ শিগগিরই প্রকাশিত হবে</strong><br><span>এখানে স্কুল কর্তৃপক্ষের অনুমোদিত ঘোষণা যুক্ত করুন।</span></div><span>—</span></div><div class="notice-row"><div><strong>পরীক্ষার রুটিন</strong><br><span>প্রকাশিত হলে এখানে রুটিনের লিংক যুক্ত করুন।</span></div><span>—</span></div><div class="notice-row"><div><strong>ছুটির বিজ্ঞপ্তি</strong><br><span>সর্বশেষ তথ্যের জন্য স্কুল অফিসে যোগাযোগ করুন।</span></div><span>—</span></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="kicker" style="color:#ffdc86">GET IN TOUCH</div><h2>যোগাযোগ</h2><p>We would be happy to hear from you.</p></div><div class="contact-grid"><div class="contact-item"><strong>📍 ঠিকানা | Address</strong>স্কুলের পূর্ণ ঠিকানা এখানে যোগ করুন</div><div class="contact-item"><strong>☎ ফোন | Phone</strong>স্কুল অফিসের নম্বর এখানে যোগ করুন</div><div class="contact-item"><strong>✉ ইমেইল | Email</strong>স্কুলের অফিসিয়াল ইমেইল এখানে যোগ করুন</div></div></div></section>
+</main>
+<footer>© <span id="year"></span> Scholar Ideal School. All rights reserved.<br>Made with care as a school gift.</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
